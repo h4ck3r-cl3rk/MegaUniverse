@@ -3,3 +3,6 @@
 ./.classpath
 .project
 *.classpath
+MEGA/.settings/org.eclipse.m2e.core.prefs
+MEGAp0rn/.settings/org.eclipse.jdt.core.prefs
+*.prefs
