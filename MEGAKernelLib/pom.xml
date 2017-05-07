@@ -2,8 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>tk.megalinkz.dev</groupId>
-    <artifactId>megapom</artifactId>
+    <artifactId>MEGA</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>MEGAKernelLib</artifactId>
+  <artifactId>MEGAKernelLIB</artifactId>
 </project>

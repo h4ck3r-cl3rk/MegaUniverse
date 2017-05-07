@@ -5,7 +5,7 @@
     <artifactId>MEGA</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>MEGAWorkspace</artifactId>
-  <name>MEGAWorkspace</name>
-  <description>Test enviroment</description>
+  <artifactId>MEGANews</artifactId>
+  <name>MEGANews</name>
+  <description>The Best News Source</description>
 </project>

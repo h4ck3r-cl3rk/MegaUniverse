@@ -5,7 +5,5 @@
     <artifactId>MEGA</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>MEGAWorkspace</artifactId>
-  <name>MEGAWorkspace</name>
-  <description>Test enviroment</description>
+  <artifactId>MEGARetrieve</artifactId>
 </project>
