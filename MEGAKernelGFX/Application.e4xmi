@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_C9hkAzJREeeAILte2tNUig" elementId="org.efxclipse.e4.application" bindingContexts="_C9hkADJREeeAILte2tNUig">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_C9hkBDJREeeAILte2tNUig" elementId="org.efxclipse.e4.mainWindow" label="Media Application" x="30" y="30" width="1024" height="768">
+    <persistedState key="fx.stage.decoration" value="platform:/plugin/1/1/decoration/TopArea.fxml"/>
+    <children xsi:type="basic:PartSashContainer" xmi:id="_C9hkBTJREeeAILte2tNUig" horizontal="true">
+      <children xsi:type="basic:Part" xmi:id="_C9hkBjJREeeAILte2tNUig" containerData="0.3" contributionURI="bundleclass://1/1.parts.MediaListPart"/>
+      <children xsi:type="basic:PartStack" xmi:id="_C9hkBzJREeeAILte2tNUig" elementId="content.stack" containerData="0.7"/>
+    </children>
+    <trimBars xmi:id="_C9hkCDJREeeAILte2tNUig">
+      <children xsi:type="menu:ToolBar" xmi:id="_C9hkCTJREeeAILte2tNUig" elementId="org.efxclipse.e4.maintoolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_C9hkCjJREeeAILte2tNUig" elementId="org.efxclipse.e4.toolitem.open" iconURI="platform:/plugin/1/icons/view-preview.png" command="_C9hkATJREeeAILte2tNUig"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_C9hkCzJREeeAILte2tNUig" elementId="org.efxclipse.e4.toolitem.save" iconURI="platform:/plugin/1/icons/system-restart.png" command="_C9hkAjJREeeAILte2tNUig"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_C9hkDDJREeeAILte2tNUig" contributionURI="bundleclass://1/1.handlers.OpenHandler" command="_C9hkATJREeeAILte2tNUig"/>
+  <handlers xmi:id="_C9hkDTJREeeAILte2tNUig" contributionURI="bundleclass://1/1.handlers.RefreshHandler" command="_C9hkAjJREeeAILte2tNUig"/>
+  <bindingTables xmi:id="_C9hkDjJREeeAILte2tNUig" bindingContext="_C9hkADJREeeAILte2tNUig">
+    <bindings xmi:id="_C9hkDzJREeeAILte2tNUig" keySequence="M1+O" command="_C9hkATJREeeAILte2tNUig"/>
+    <bindings xmi:id="_C9hkEDJREeeAILte2tNUig" keySequence="M1+R" command="_C9hkAjJREeeAILte2tNUig"/>
+  </bindingTables>
+  <rootContext xmi:id="_C9hkADJREeeAILte2tNUig" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_C9hkETJREeeAILte2tNUig" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_C9hkEjJREeeAILte2tNUig" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_C9hkATJREeeAILte2tNUig" elementId="media.open" commandName="openMedia"/>
+  <commands xmi:id="_C9hkAjJREeeAILte2tNUig" elementId="media.refresh" commandName="refreshMedia"/>
+  <addons xmi:id="_C9hkEzJREeeAILte2tNUig" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_C9hkFDJREeeAILte2tNUig" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_C9hkFTJREeeAILte2tNUig" elementId="org.eclipse.fx.ui.keybindings.e4.service" contributionURI="bundleclass://org.eclipse.fx.ui.keybindings.e4/org.eclipse.fx.ui.keybindings.e4.BindingServiceAddon"/>
+  <addons xmi:id="_C9hkFjJREeeAILte2tNUig" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_C9hkFzJREeeAILte2tNUig" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_C9hkGDJREeeAILte2tNUig" elementId="org.eclipse.fx.ui.keybindings.e4.model" contributionURI="bundleclass://org.eclipse.fx.ui.keybindings.e4/org.eclipse.fx.ui.keybindings.e4.BindingProcessingAddon"/>
+  <addons xmi:id="_C9hkGTJREeeAILte2tNUig" elementId="org.eclipse.e4.ui.workbench.addons.HandlerProcessingAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+</application:Application>

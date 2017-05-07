@@ -1,0 +1,113 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>tk.megalinkz.dev</groupId>
+		<artifactId>megapom</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>MEGAKernelGFX</artifactId>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.oracle</groupId>
+				<artifactId>javafx</artifactId>
+				<version>2.2</version>
+				<systemPath>${java.home}/lib/ext/jfxrt.jar</systemPath>
+				<scope>system</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.maven.plugin-testing</groupId>
+				<artifactId>maven-plugin-testing-harness</artifactId>
+				<version>3.3.0</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-core -->
+			<dependency>
+				<groupId>com.sun.jersey</groupId>
+				<artifactId>jersey-core</artifactId>
+				<version>1.19.3</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-bundle -->
+			<dependency>
+				<groupId>com.sun.jersey</groupId>
+				<artifactId>jersey-bundle</artifactId>
+				<version>1.19.3</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.e4.core.services -->
+			<dependency>
+				<groupId>org.eclipse.platform</groupId>
+				<artifactId>org.eclipse.e4.core.services</artifactId>
+				<version>2.0.100</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.eclipse.ui/workbench -->
+			<dependency>
+				<groupId>org.eclipse.ui</groupId>
+				<artifactId>workbench</artifactId>
+				<version>3.3.2</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.ui -->
+			<dependency>
+				<groupId>org.eclipse.platform</groupId>
+				<artifactId>org.eclipse.ui</artifactId>
+				<version>3.108.1</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.osgi -->
+			<dependency>
+				<groupId>org.eclipse.platform</groupId>
+				<artifactId>org.eclipse.osgi</artifactId>
+				<version>3.11.2</version>
+			</dependency>
+
+			<!-- Newly added dependicies -->
+			<!-- https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.ui.views -->
+			<dependency>
+				<groupId>org.eclipse.platform</groupId>
+				<artifactId>org.eclipse.ui.views</artifactId>
+				<version>3.8.101</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.eclipse/eclipse-platform -->
+			<dependency>
+				<groupId>org.eclipse</groupId>
+				<artifactId>eclipse-platform</artifactId>
+				<version>3.5.1</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.eclipse.core/org.eclipse.core.runtime -->
+			<dependency>
+				<groupId>org.eclipse.core</groupId>
+				<artifactId>org.eclipse.core.runtime</artifactId>
+				<version>3.10.0.v20140318-2214</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<build>
+		<sourceDirectory>src/main/java/</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>src</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>com.zenjava</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+				<version>8.8.3</version>
+				<configuration>
+					<mainClass>main.Main.java</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
